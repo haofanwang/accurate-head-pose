@@ -22,7 +22,7 @@ def parse_args():
     """Parse input arguments."""
     parser = argparse.ArgumentParser(description='Head pose estimation using the Hopenet network.')
     parser.add_argument('--gpu', dest='gpu_id', help='GPU device id to use [0]',
-            default=3, type=int)
+            default=0, type=int)
     parser.add_argument('--num_epochs', dest='num_epochs', help='Maximum number of training epochs.',
           default=25, type=int)
     parser.add_argument('--batch_size', dest='batch_size', help='Batch size.',
@@ -31,9 +31,9 @@ def parse_args():
           default=0.000001, type=float)
     parser.add_argument('--dataset', dest='dataset', help='Dataset type.', default='AFLW_multi', type=str)
     parser.add_argument('--data_dir', dest='data_dir', help='Directory path for data.',
-          default='/mnt/hdfs-data-1/adas/haofan.wang/DMS-T-HeadPose/AFLW/', type=str)
+          default='', type=str)
     parser.add_argument('--filename_list', dest='filename_list', help='Path to text file containing relative paths for every example.',
-          default='/mnt/hdfs-data-1/adas/haofan.wang/HeadPose_exp/deep-head-pose/code/tools/AFLW_train.txt', type=str)
+          default='/tools/AFLW_train.txt', type=str)
     parser.add_argument('--output_string', dest='output_string', help='String appended to output snapshots.', default = '', type=str)
     parser.add_argument('--alpha', dest='alpha', help='Regression loss coefficient.',
           default=2, type=float)
@@ -223,4 +223,4 @@ if __name__ == '__main__':
         if epoch % 1 == 0 and epoch < num_epochs:
             print 'Taking snapshot...'
             torch.save(model.state_dict(),
-            'output/snapshots/setting28/' + args.output_string + '_epoch_'+ str(epoch+1) + '.pkl')
+            'output/snapshots/' + args.output_string + '_epoch_'+ str(epoch+1) + '.pkl')
