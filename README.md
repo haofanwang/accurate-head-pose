@@ -13,13 +13,15 @@ We provide pretrained model to reproduce the same result shown in the paper.
 
 
 ### Testing
-Training and testing lists can be found in /tools, you need download corresonding dataset and update the path.
+Training and testing lists can be found in /tools, you need download corresonding dataset and update the path.  
+[AFLW2000 dataset](https://pan.baidu.com/s/1GMyAC0I_x79zXmXIegpaQg), password: xr6e  
+
 ```bash
 python test_hopenet.py --gpu 0 --data_dir directory-path-for-dataset --filename_list filename-list --snapshot model --dataset dataset-name 
 ```
 
 
-### TODO:
+### TODO
 Instructions for scripts  
 Better and better models  
 Videos and example demo  
