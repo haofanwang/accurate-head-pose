@@ -26,5 +26,19 @@ Instructions for scripts
 Better and better models  
 Videos and example demo  
 
+### Cite this work
+
+Haofan Wang, Zhenhua Chen and Yi Zhou "Hybrid coarse-fine classification for head pose estimation." arXiv:1901.06778, 2019. ([Download](https://arxiv.org/abs/1901.06778))
+
+Biblatex entry:
+
+            @article{wang2019hybrid,
+              title={Hybrid coarse-fine classification for head pose estimation},
+              author={Wang, Haofan and Chen, Zhenghua and Zhou, Yi},
+              journal={arXiv preprint arXiv:1901.06778},
+              year={2019}
+            }
+            
+
 ### Acknowledgement
 Our hybrid classification network is plug-and-play on top of the [deep-head-pose](https://github.com/natanielruiz/deep-head-pose), but it could be extended to other classification tasks easily. We thank Nataniel Ruiz for releasing deep-head-pose-Pytorch codebase. 
