@@ -90,7 +90,7 @@ class BIWI_multi(Dataset):
         bins_1 = np.array(range(-99, 102, 11))
         binned_pose_1 = torch.LongTensor(np.digitize([yaw, pitch, roll], bins_1) - 1)
         
-        bins_2 = np.array(range(-99, 102, 66))
+        bins_2 = np.array(range(-99, 102, 33))
         binned_pose_2 = torch.LongTensor(np.digitize([yaw, pitch, roll], bins_2) - 1)
         
         bins_3 = np.array(range(-99, 102, 99))
@@ -157,7 +157,7 @@ class AFLW_multi(Dataset):
         bins_1 = np.array(range(-99, 102, 11))
         binned_pose_1 = torch.LongTensor(np.digitize([yaw, pitch, roll], bins_1) - 1)
         
-        bins_2 = np.array(range(-99, 102, 66))
+        bins_2 = np.array(range(-99, 102, 33))
         binned_pose_2 = torch.LongTensor(np.digitize([yaw, pitch, roll], bins_2) - 1)
         
         bins_3 = np.array(range(-99, 102, 99))
@@ -246,7 +246,7 @@ class Pose_300W_LP_multi(Dataset):
         bins_1 = np.array(range(-99, 102, 11))
         binned_pose_1 = np.digitize([yaw, pitch, roll], bins_1) - 1
         
-        bins_2 = np.array(range(-99, 102, 66))
+        bins_2 = np.array(range(-99, 102, 33))
         binned_pose_2 = np.digitize([yaw, pitch, roll], bins_2) - 1
         
         bins_3 = np.array(range(-99, 102, 99))
