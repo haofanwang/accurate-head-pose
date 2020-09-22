@@ -11,6 +11,7 @@ We provide pretrained model to reproduce the same result shown in the paper.
 
 [BIWI](https://pan.baidu.com/s/1bZXMdGiycX4T4u0VVofQXQ), password: 8qpc  
 
+For those who cannot have access to BaiduDisk, you can download pretrained models on [Google Drive](https://drive.google.com/drive/folders/1is55mbFHsAVbeStkIZf9LV4HdiSjJHd9?usp=sharing)
 
 ### Testing
 Training and testing lists can be found in /tools, you need download corresonding dataset and update the path.  
